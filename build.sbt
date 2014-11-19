@@ -6,7 +6,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 libraryDependencies ++= Seq(
   javaJdbc,
-  javaEbean
+  javaEbean,
+  "mysql" % "mysql-connector-java" % "5.1.30"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the
